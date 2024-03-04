@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import DisplayGraph from './DisplayGraph.jsx'
 import './KrakenAPIStyles.css';
+import { Link } from 'react-router-dom';
 
 const KrakenAPI = () => {
   const [tickerData, setTickerData] = useState([]);
@@ -210,11 +211,11 @@ const KrakenAPI = () => {
           <></>
         )}
         {/* Return to Homepage button */}
-        <a href="/">
+        <Link to="/">
           <button>
             Return to Homepage
           </button>
-        </a>
+        </Link>
       </div>
       <br></br>
       <div className='description'>

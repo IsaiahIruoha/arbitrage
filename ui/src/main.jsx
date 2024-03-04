@@ -2,17 +2,17 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import {createHashRouter, RouterProvider} from 'react-router-dom'
 import KrakenAPI from './KrakenAPI.jsx'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
+  {
+    path: "/kraken-api",
+    element: <KrakenAPI />,
+  },
   {
     path: "/",
     element: <App />,
-  },
-  {
-    path: "kraken-test",
-    element: <KrakenAPI />,
   },
 ]);
 
