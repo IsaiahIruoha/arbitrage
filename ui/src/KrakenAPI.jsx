@@ -64,7 +64,7 @@ const KrakenAPI = () => {
     const postData = [linkData, nodeData]
     try{
       // **UPDATE ENDPOINT WHEN USING/TESTING** 
-      const response = await axios.post('http://127.0.0.1:5000/process-graph', postData, {
+      const response = await axios.post('https://arbitrage-backend-utji.onrender.com/process-graph', postData, {
         headers: {
           'Content-Type': 'application/json',
         }
