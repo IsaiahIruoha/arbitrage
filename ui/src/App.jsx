@@ -204,7 +204,7 @@ function App() {
           href="https://www.overleaf.com/project/65c2dc3d38eab49cd8ba2af9"
           className="btn btn-more"
           target="_blank"
-          >Learn More <i className="fas fa-chevron-right"></i></a>
+          >Research Paper <i className="fas fa-chevron-right"></i></a>
       </div>
       {isPopupVisible && (
         <div className="popup visible">
