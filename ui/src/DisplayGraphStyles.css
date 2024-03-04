@@ -77,7 +77,7 @@ svg {
   position: absolute;
   bottom: 0;
   background-color: #444;
-  color: #4CAF50;
+  color: #646cff;
   padding: 10px;
   font-weight: bold;
   border-top: 2px solid #555;
@@ -89,4 +89,3 @@ svg {
   border-bottom-right-radius: 8px;
   z-index: 10;
 }
-
