@@ -21,7 +21,6 @@ jobs:
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
-        working-directory: ./ui  # Set working directory to UI directory
 
       - name: Build project
         run: npm run build
