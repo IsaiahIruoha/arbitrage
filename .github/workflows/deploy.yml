@@ -21,15 +21,17 @@ jobs:
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
+        working-directory: ./ui  # Set working directory to UI directory
 
       - name: Build project
         run: npm run build
+        working-directory: ./ui  # Set working directory to UI directory
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
         with:
           name: production-files
-          path: ./dist
+          path: ./ui/dist  # Set the path to the UI directory
 
   deploy:
     name: Deploy
@@ -42,10 +44,10 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: production-files
-          path: ./dist
+          path: ./ui/dist  # Set the path to the UI directory
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./ui/dist  # Set the path to the UI directory
