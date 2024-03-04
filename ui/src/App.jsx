@@ -141,7 +141,7 @@ function App() {
           Our graph neural network accepts Optimal Arbitrage Game states (stored as a Pytorch Geometric Graph) as input, and produces a value and policy vector. The value vector has one index for each currency representing an estimate of the total rewards we can obtain by trading into each currency. Similarly, the policy vector represents a recommendation of with what probability to take each action.</p>
 
         <div className="vis-graph" data-aos="zoom-in">
-          <iframe frameborder="0"
+          <iframe frameBorder="0"
             src="https://observablehq.com/embed/@ameyasd/neighbourhoods-for-cnns-and-gnns?cells=cnn_svg%2Csvg"></iframe>
         </div>
         <div className="content-double">
@@ -220,8 +220,8 @@ function App() {
         </div>
       )}
       <div className="icon-background" onClick={togglePopup}>
-        <svg className={`authors ${isPopupVisible ? 'rotate' : ''}`} fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-        viewBox="0 0 964.07 964.07" xml:space="preserve">
+        <svg className={`authors ${isPopupVisible ? 'rotate' : ''}`} fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
+        viewBox="0 0 964.07 964.07" xmlSpace="preserve">
       <g>
         <path d="M850.662,877.56c-0.77,0.137-4.372,0.782-10.226,1.831c-230.868,41.379-273.337,48.484-278.103,49.037
           c-11.37,1.319-19.864,0.651-25.976-2.042c-3.818-1.682-5.886-3.724-6.438-4.623c0.268-1.597,2.299-5.405,3.539-7.73

@@ -405,6 +405,10 @@ iframe {
   font-size: 20px;
 }
 
+#training {
+  border-radius: 20px;
+}
+
 @media (prefers-color-scheme: light) {
 
   body {
