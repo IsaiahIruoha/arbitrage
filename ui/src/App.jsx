@@ -4,6 +4,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS CSS file
 import { Link } from 'react-router-dom';
 
+const scrollToElement = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 function App() {
   const [isPopupVisible, setIsPopupVisible] = useState(false); // State to track popup visibility
   const [isPastHome, setIsPastHome] = useState(false); // State to track whether scrolled past home section
@@ -67,20 +74,24 @@ function App() {
     });
   }, []); // Run only once after component mount
 
+  const handleScrollTo = (id) => {
+    scrollToElement(id);
+  };
+
   return (
-    <div className="container">
+    <div className="container" id="home">
       <nav>
         <a className='qmind' href='https://qmind.ca/' target='_blank'> 
           <img src="https://raw.githubusercontent.com/IsaiahIruoha/arbitrage/07c3d67423e634e1fcc1765c13d7704c00bf0bc4/ui/assets/qmind.svg" alt='qmind logo'></img>
         </a>
         <ul className={`nav-links ${isPastHome ? 'opacity-low' : ''}`}>
-          <li className="upward"><a href="#" className={activeSection === 'home' ? 'active' : ''}>Home</a></li>
-          <li className="upward"><a href="#arbitrage" className={activeSection === 'arbitrage' ? 'active' : ''}>Arbitrage</a></li>
-          <li className="upward"><a href="#methods" className={activeSection === 'methods' ? 'active' : ''}>Methods</a></li>
-          <li className="upward"><a href="#results" className={activeSection === 'results' ? 'active' : ''}>Results</a></li>
+        <li className="upward"><a onClick={() => handleScrollTo('home')} className={activeSection === 'home' ? 'active' : ''}>Home</a></li>
+          <li className="upward"><a onClick={() => handleScrollTo('arbitrage')} className={activeSection === 'arbitrage' ? 'active' : ''}>Arbitrage</a></li>
+          <li className="upward"><a onClick={() => handleScrollTo('methods')} className={activeSection === 'methods' ? 'active' : ''}>Methods</a></li>
+          <li className="upward"><a onClick={() => handleScrollTo('results')} className={activeSection === 'results' ? 'active' : ''}>Results</a></li>
         </ul>
       </nav>
-      <div className="content-box" id="home">
+      <div className="content-box">
         <div className="content">
           <div className="text">
             <h2>A Reinforcement Learning Approach to Finding Cryptocurrency Arbitrage Paths</h2>
