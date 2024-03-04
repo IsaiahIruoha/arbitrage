@@ -71,7 +71,7 @@ function App() {
     <div className="container">
       <nav>
         <a className='qmind' href='https://qmind.ca/' target='_blank'> 
-          <img src="/assets/qmind.svg" alt='qmind logo'></img>
+          <img src="/arbitrage/assets/qmind.svg" alt='qmind logo'></img>
         </a>
         <ul className={`nav-links ${isPastHome ? 'opacity-low' : ''}`}>
           <li className="upward"><a href="#" className={activeSection === 'home' ? 'active' : ''}>Home</a></li>
@@ -94,7 +94,7 @@ function App() {
             </div>
           </div>
           <div className="image">
-            <img src="/assets/cryptorobot.jpg" alt="crypto robot" className="image"/>
+            <img src="/arbitrage/assets/cryptorobot.jpg" alt="crypto robot" className="image"/>
           </div>
         </div>
       </div>
@@ -110,7 +110,7 @@ function App() {
             In order to find currency arbitrage paths in a cryptocurrency market, we must represent the cryptocurrency exchange as a graph. In this graph, each node represents a currency and each edge a potential trade. Lastly, the edge weight of each edge is the exchange rate between the respective source and target node (see this adjacent graph for an example of this). The problem of finding the optimal arbitrage path given a graph is equivalent to finding the longest path containing a cycle, a known NP-Hard problem. This means there is no known polynomial-time solution. In this project, we apply reinforcement learning techniques to approximate the Optimal Arbitrage Problem.</p>
           </div>
           <div className="text-image">
-            <img src="/assets/arbitrage.jpg" alt="arbitrage" className="image" />
+            <img src="/arbitrage/assets/arbitrage.jpg" alt="arbitrage" className="image" />
           </div>
         </div>
       </div>
@@ -135,7 +135,7 @@ function App() {
         </div>
         <div className="content-double">
           <div className="text-image">
-            <img src="/assets/mcts_desc.webp" alt="method-one" className="text-image" id="mcts"/>
+            <img src="/arbitrage/assets/mcts_desc.webp" alt="method-one" className="text-image" id="mcts"/>
           </div>
           <div className="text">
             <h3>Monte Carlo Tree Search</h3>
@@ -155,7 +155,7 @@ function App() {
             
           </div>
           <div className="text-image">
-            <img src="/assets/Training.webp" alt="Training" className="text-image" id="training"/>
+            <img src="/arbitrage/assets/Training.webp" alt="Training" className="text-image" id="training"/>
           </div>
         </div>
       </div>
@@ -171,13 +171,13 @@ function App() {
               </p>
           </div>
           <div className="text-image">
-            <img src="/assets/results.jpg" alt="results" className="text-image" id="results"/>
+            <img src="/arbitrage/assets/results.jpg" alt="results" className="text-image" id="results"/>
             
           </div>
         </div>
         <div className="content-double">
         <div className="text-image">
-            <img src="/assets/Speed_tables_CUCAI.png" alt="results" className="text-image" id="results"/>
+            <img src="/arbitrage/assets/Speed_tables_CUCAI.png" alt="results" className="text-image" id="results"/>
           </div>
           <div className="text">
             <p>
