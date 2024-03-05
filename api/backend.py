@@ -9,10 +9,8 @@ import sys
 import math
 import random
 
-sys.path.append("../model")
-
-from game import Game
-from model import GCN
+from ..model.game import Game
+from ..model.model import GCN
 
 model = torch.load('model_b3.pth')
 
