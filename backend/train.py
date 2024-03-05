@@ -12,7 +12,7 @@ sys.path.insert(1, 'utils')
 from graphutils import create_random_graph
 
 from model import GCN
-from model.game import Game
+from game import Game
 from model.mcts import MCTSConfig, mcts
 
 @torch.no_grad

@@ -2,7 +2,7 @@ import os
 from subprocess import call
 
 # Change directory to the API folder
-os.chdir('api')
+os.chdir('backend')
 
 # Start gunicorn with your application
-call(['gunicorn', 'backend:app'])
+call(['gunicorn', 'api:app'])
