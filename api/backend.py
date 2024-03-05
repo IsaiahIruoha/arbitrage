@@ -9,8 +9,8 @@ import sys
 import math
 import random
 
-from ..model.game import Game
-from ..model.model import GCN
+from model.game import Game
+from model.model import GCN
 
 model = torch.load('model_b3.pth')
 
