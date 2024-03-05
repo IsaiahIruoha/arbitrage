@@ -8,11 +8,17 @@ import copy
 import sys
 import math
 import random
+import os
 
-sys.path.append("../model")
+
 from game import Game
+from model import GCN
 
-model = torch.load('model_b3.pth')
+# Path to the directory of this script
+dir_path = os.path.dirname(os.path.realpath(__file__))
+model_path = os.path.join(dir_path, 'model_b3.pth')
+model = torch.load(model_path)
+
 
 app = Flask(__name__)
 CORS(app, origins=['*']) # Change this before deployment!
