@@ -1,3 +1,7 @@
+api/__pycache__
+api/arbback/
+api/myenv/
+
 .ipynb_checkpoints
 __pycache__
 
@@ -25,6 +29,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-arbback/
-myenv/
