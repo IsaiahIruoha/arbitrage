@@ -1,1 +1,1 @@
-web: python start_gunicorn.py
+web: python deploy.py

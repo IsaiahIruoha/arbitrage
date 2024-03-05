@@ -12,8 +12,8 @@ sys.path.insert(1, 'utils')
 from graphutils import create_random_graph
 
 from model import GCN
-from game import Game
-from mcts import MCTSConfig, mcts
+from model.game import Game
+from model.mcts import MCTSConfig, mcts
 
 @torch.no_grad
 def eval(model: GCN):
