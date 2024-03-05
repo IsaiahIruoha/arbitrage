@@ -1,1 +1,1 @@
-web: gunicorn api.backend:app
+web: python start_gunicorn.py
