@@ -64,7 +64,7 @@ const KrakenAPI = () => {
     const postData = [linkData, nodeData]
     try{
       // **UPDATE ENDPOINT WHEN USING/TESTING** 
-      const response = await axios.post('https://arb-backend-7eead36ec15a.herokuapp.com/', postData, {
+      const response = await axios.post('http://127.0.0.1:5000/process-graph', postData, {
         headers: {
           'Content-Type': 'application/json',
         }
