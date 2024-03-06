@@ -82,7 +82,7 @@ function App() {
     <div className="container" id="home">
       <nav>
         <a className='qmind' href='https://qmind.ca/' target='_blank'> 
-          <img src="https://raw.githubusercontent.com/IsaiahIruoha/arbitrage/07c3d67423e634e1fcc1765c13d7704c00bf0bc4/ui/assets/qmind.svg" alt='qmind logo'></img>
+          <img src="https://raw.githubusercontent.com/IsaiahIruoha/arbitrage/64e29eaec6c660999e004e0a5db9ffe529185fd2/frontend/assets/qmind.svg" alt='qmind logo'></img>
         </a>
         <ul className={`nav-links ${isPastHome ? 'opacity-low' : ''}`}>
         <li className="upward"><a onClick={() => handleScrollTo('home')} className={activeSection === 'home' ? 'active' : ''}>Home</a></li>
@@ -105,7 +105,7 @@ function App() {
             </div>
           </div>
           <div className="image">
-            <img src="https://github.com/IsaiahIruoha/arbitrage/blob/main/ui/assets/cryptorobot.jpg?raw=true" alt="crypto robot" className="image"/>
+            <img src="https://github.com/IsaiahIruoha/arbitrage/blob/main/frontend/assets/cryptorobot.jpg?raw=true" alt="crypto robot" className="image"/>
           </div>
         </div>
       </div>
@@ -121,7 +121,7 @@ function App() {
             In order to find currency arbitrage paths in a cryptocurrency market, we must represent the cryptocurrency exchange as a graph. In this graph, each node represents a currency and each edge a potential trade. Lastly, the edge weight of each edge is the exchange rate between the respective source and target node (see this adjacent graph for an example of this). The problem of finding the optimal arbitrage path given a graph is equivalent to finding the longest path containing a cycle, a known NP-Hard problem. This means there is no known polynomial-time solution. In this project, we apply reinforcement learning techniques to approximate the Optimal Arbitrage Problem.</p>
           </div>
           <div className="text-image">
-            <img src="https://github.com/IsaiahIruoha/arbitrage/blob/main/ui/assets/arbitrage.jpg?raw=true" alt="arbitrage" className="image" />
+            <img src="https://github.com/IsaiahIruoha/arbitrage/blob/main/frontend/assets/arbitrage.jpg?raw=true" alt="arbitrage" className="image" />
           </div>
         </div>
       </div>
@@ -146,7 +146,7 @@ function App() {
         </div>
         <div className="content-double">
           <div className="text-image">
-            <img src="https://raw.githubusercontent.com/IsaiahIruoha/arbitrage/main/ui/assets/mcts_desc.webp" alt="method-one" className="text-image" id="mcts"/>
+            <img src="https://raw.githubusercontent.com/IsaiahIruoha/arbitrage/main/frontend/assets/mcts_desc.webp" alt="method-one" className="text-image" id="mcts"/>
           </div>
           <div className="text">
             <h3>Monte Carlo Tree Search</h3>
@@ -166,7 +166,7 @@ function App() {
             
           </div>
           <div className="text-image">
-            <img src="https://raw.githubusercontent.com/IsaiahIruoha/arbitrage/main/ui/assets/Training.webp" alt="Training" className="text-image" id="training"/>
+            <img src="https://raw.githubusercontent.com/IsaiahIruoha/arbitrage/main/frontend/assets/Training.webp" alt="Training" className="text-image" id="training"/>
           </div>
         </div>
       </div>
@@ -182,13 +182,13 @@ function App() {
               </p>
           </div>
           <div className="text-image">
-            <img src="https://github.com/IsaiahIruoha/arbitrage/blob/main/ui/assets/results.jpg?raw=true" alt="results" className="text-image" id="results"/>
+            <img src="https://github.com/IsaiahIruoha/arbitrage/blob/main/frontend/assets/results.jpg?raw=true" alt="results" className="text-image" id="results"/>
             
           </div>
         </div>
         <div className="content-double">
         <div className="text-image">
-            <img src="https://github.com/IsaiahIruoha/arbitrage/blob/main/ui/assets/Speed_tables_CUCAI.png?raw=true" alt="results" className="text-image" id="results"/>
+            <img src="https://github.com/IsaiahIruoha/arbitrage/blob/main/frontend/assets/Speed_tables_CUCAI.png?raw=true" alt="results" className="text-image" id="results"/>
           </div>
           <div className="text">
             <p>
