@@ -79,7 +79,9 @@ function App() {
   };
 
   return (
-    <div className="container" id="home">
+    <div className="container" >
+      <div id="home">
+      </div>
       <nav>
         <a className='qmind' href='https://qmind.ca/' target='_blank'> 
           <img src="https://raw.githubusercontent.com/IsaiahIruoha/arbitrage/64e29eaec6c660999e004e0a5db9ffe529185fd2/frontend/assets/qmind.svg" alt='qmind logo'></img>
