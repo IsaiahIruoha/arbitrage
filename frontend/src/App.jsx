@@ -203,7 +203,7 @@ function App() {
       </div>
       <div data-aos="fade-up" data-aos-duration="1000">
         <a
-          href="https://www.overleaf.com/project/65c2dc3d38eab49cd8ba2af9"
+          href="https://drive.google.com/file/d/1EHe0314CBGzUaQvjfffCZLVQK2sXhskk/view?usp=sharing"
           className="btn btn-more"
           target="_blank"
           >Research Paper <i className="fas fa-chevron-right"></i></a>
